@@ -1,0 +1,482 @@
+AWS CLI Course Quiz
+
+Module 3: Introduction AWS CLI
+1.	AWS CLI is based on a Python based framework which is called……..
+a)	Bytecore
+b)	Botocode
+c)	Bytecode
+d)	Botocore
+
+The correct answer is option d – botocore
+
+Explanation for correct answer: 
+Pip is a package manager for Python. AWS CLI is based on botocore, which intern based on Python
+
+Explanation for Wrong answer: 
+Bytecore – There is no term llike Bytecore in Python based framework 
+Botocode – There is no term llike Botocode in Python based framework 
+Bytecode – There is no term llike Bytecode in Python based framework 
+
+
+2.	Which AWS CLI sub-command, is especially used to get more information about AWS CLI and its specific commands.?
+a)	Help
+b)	Info
+c)	Get
+d)	Assist
+
+The correct answer is option a. – Help
+
+Explanation for correct answer: 
+
+That is correct. The help sub-command is used to get information and help about AWS CLI and its specific commands. The syntax for this command is aws space any type of service space help
+
+Explanation for Wrong answer: 
+Info - There is no command with the name – Info in AWS CLI
+Get - There is no command with the name – Get in AWS CLI
+Assist - There is no command with the name – Assist in AWS CLI
+
+
+3.	AWS CLI supports the following output formats for its command output.
+
+a)	Json 
+b)	Text 
+c)	Table 
+d)	All of the above
+
+The correct answer is option d. 
+
+Explanation for correct answer: 
+That is correct. The output format is used by AWS CLI to present the output of the commands. The output format can be either Json, Text or Table.
+ 
+Explanation for Wrong answer: 
+The option a - The output format can also be Text or Table which is supported by AWS CLI
+The option b - The output format can also be Json or Table which is supported by AWS CLI
+The option c - The output format can also be Json or Text which is supported by AWS CLI
+
+-------------
+
+Module 4: AWS CLI - Set Up
+
+4.	The AWS AutoCompletion tool is known as: 
+a)	AWS Finisher
+b)	AWS Presenter
+c)	AWS Completer 
+d)	AWS Automation 
+
+The correct answer is option C. - AWS completer 
+
+Explanation for correct answer: 
+That is correct. For configuring AWS on bash shell, first, we need to look for the autocompletion tools. An AWS autocompletion tool is known as aws completer. 
+
+Explanation for Wrong answer: 
+AWS Finisher – There is no such term available in AWS AutoCompletion tool
+AWS Presenter – There is no such term available in AWS AutoCompletion tool
+AWS Automation – There is no such term available in AWS AutoCompletion tool
+
+5.	Is this statement true: 
+
+Filtering command output on the client side can be done with the AWS CLI filter option whereas filtering the command output can be done on the server side can be done using the AWS CLI query option.
+
+The correct answer is False.
+ 
+Explanation for correct answer: 
+That is correct. In fact, client side filtering can be done via query option and server side filtering can be done using filter option.
+
+Explanation for Wrong answer: 
+No this is correct. In fact, client side filtering can be done via query option and server side filtering can be done using filter option.
+
+
+6.	?AWS CLI query option uses a special query pattern called:
+
+a)	Dry run pattern 
+b)	JMESPath pattern
+c)	Filter pattern
+d)	Query analysis pattern
+
+The correct answer is option b.
+ 
+Explanation for correct answer: 
+That is correct. The AWS CLI query option uses the JMESpath query expression patterns to specify the filters for controlling the AWS CLI command's output. 
+
+Explanation for Wrong answer: 
+Dry Run Patten – There is no such term available in AWS CLI 
+Filter Pattern– There is no such term available in AWS CLI 
+Query Analysis Pattern– There is no such term available in AWS CLI 
+
+Module 5: AWS CLI – EC2
+
+7.	We need access to the ________________ to retrieve credentials or establish a secure connection to our AWS EC2 instance.
+a)	Key Pair
+b)	Security Group
+c)	Amazon Machine Image(AMI),
+d)	VPC and Subnet 
+
+The correct answer is option a - Key Pair
+
+Explanation for correct answer: 
+That is correct. Amazon EC2 uses public–key cryptography to encrypt and decrypt login information. The public and private keys are known as a key pair. 
+
+Explanation for Wrong answer: 
+Security Group: - No that is not right. A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you associate one or more security groups with the instance.
+
+AMI: No that is not right. Amazon Machine Images are used to specify the operating system that the EC2 instance is going to use. There are multiple types of AMIs in an AWS which range from various forms of Linux (Ubuntu, Red Hat) to multiple types of Windows - Windows server 2008, 2012 and so on. 
+
+VPC and Subnets: No that is not right. VPC stands for Virtual Private Cloud. These are the basic building blocks of the AWS. The EC2 instance is placed in a VPC
+ 
+8.	AMI stands for – 
+a)	Amazon Machine Input 
+b)	Amazon Machine Image
+c)	Amazon Magnetic Input 
+d)	Amazon Magnetic Image
+
+The correct answer is option b - Amazon Machine Image. 
+
+Explanation for correct answer: 
+That is correct. AMI stands for Amazon Machine Images. AMIs are used to specify the operating system that the EC2 instance is going to use.
+
+Explanation for Wrong answer: 
+Amazon Machine Input - There is no such term available in AWS CLI 
+Amazon Magnetic Input - There is no such term available in AWS CLI 
+Amazon Magnetic Images - There is no such term available in AWS CLI 
+
+9.	The ________________ controls network data egress and ingress from and to the AWS EC2 instance.
+a)	Key Pair
+b)	Security Group
+c)	Amazon Machine Image (AMI)
+d)	VPC and Subnet 
+
+The correct answer is option b) Security Group
+
+Explanation for correct answer: 
+Security Group: - That is correct. Security Groups act as a virtual firewall. They control network data egress and ingress from and to the AWS EC2 instance. 
+
+Explanation for Wrong answer: 
+Key Pair are security credentials that are passed onto the user for connecting to their EC2 instances. They ensure a secure connection and protect the EC2 instance. 
+AMI: Amazon Machine Images are used to specify the operating system that the ec2 instance is going to use. There are multiple types of AMIs in an AWS which range from various forms of Linux (Ubuntu, Red Hat) to multiple types of Windows - Windows server 2008, 2012 and so on. 
+VPC and Subnets: VPC stands for Virtual Private Cloud. These are the basic building blocks of the AWS. The EC2 instance is placed on a VPC
+ 
+ 
+Module 6: AWS CLI – S3
+
+10.	Is this statement true?
+EBS volumes attached to AWS EC2 are internet accessible where as S3 buckets are not internet accessible.
+
+The correct answer is False
+
+Explanation for correct answer: 
+That is correct. This statement is not true because AWS S3 is an internet accessible storage service. The main difference between S3 and EBS services is that, EBS volumes are not internet accessible where as S3 are internet accessible. AWS S3 buckets provide us with a specific URL to access them over the internet.
+
+Explanation for Wrong answer: 
+No this statement is not true because AWS S3 is an internet accessible storage. The main difference between S3 and EBS volumes is that, EBS volumes are not internet accessible where as S3 are internet accessible and can have a specific URL to access.
+
+11.	S3 stands for – 
+a)	Simple Storage Service
+b)	Simple Storage Safe 
+c)	Simple Store Source 
+d)	Simple Store Safe
+
+The correct answer is option a - Simple Storage Source. 
+
+Explanation for correct answer: 
+That is correct. S3 stands for Simple Storage Service. S3 is an internet accessible storage service provided by AWS.
+
+Explanation for Wrong answer: 
+Simple Storage Safe - There is no such term available in AWS CLI. S3 stands for Simple Storage Source. 
+Simple Store Source - There is no such term available in AWS CLI. S3 stands for Simple Storage Source. 
+Simple Store Safe - There is no such term available in AWS CLI. S3 stands for Simple Storage Source.  
+
+12.	Is this statement true?
+Objects in S3 can be as small as 1 byte and as large as 5 TB
+
+The correct answer is True
+
+Explanation for correct answer: 
+Yes this statement is true - Objects in S3 can be as small as 1 byte and as large as 5 TB
+
+Explanation for Wrong answer: 
+This statement cannot be false as the objects in S3 can be as small as 1 byte and as large as 5 TB
+
+
+Module 7: IAM
+
+13.	Is this statement true?
+
+The AWS IAM user accounts can be authenticated using username/password or API Access Keys or Multi Factor Authentication Tokens
+
+The correct answer is True
+
+Explanation for correct answer: 
+The IAM Users are accounts created on IAM that can be authenticated using the very common method like username/password or API access keys which can be used as – Programmatic Access or multi factor tokens
+
+Explanation for Wrong answer: 
+The IAM Users are accounts created on IAM that can be authenticated using the very common method like username/password or API access keys which can be used as – Programmatic Access or multi factor tokens.
+
+14.	The Two types of accounts supported by AWS IAM are:
+ 
+a)	Admin and IAM Users
+b)	Root and IAM Client
+c)	Root and IAM Users
+d)	Admin and IAM Client  
+
+The correct answer is option c) Root and IAM Users.
+ 
+Explanation for correct answer: 
+Two types of  Accounts on AWS – Root and IAM Users 
+•	Root Account is the account used to setup AWS subscription
+•	IAM users are created to provide other users access to your AWS subscription 
+ 
+Explanation for Wrong answer: 
+Admin and IAM Users – The two types of Accounts on AWS are Root and IAM Users. There is no account with the name Admin
+Root and IAM Client – The two types of Accounts on AWS are Root and IAM Users. There is no account with the name IAM Client
+Admin and IAM Client – The two types of Accounts on AWS are Root and IAM Users. There is no account with the name Admin and IAM Client.
+ 
+15.	To specify permissions for a collection of users instead of granting that permission to single user we use
+a)	Use Permissions
+b)	Use Group
+c)	Use Authentication
+d)	Use Policy
+
+The correct answer is option b) Use Group
+
+Explanation for correct answer: 
+Use groups is used to specify permissions for a collection of users instead of granting that permission to single user. This means if similar permissions or restrictions have to be imposed on more than one or two users, instead doing this separately we can create a group and impose those restrictions on the group. 
+
+Explanation for Wrong answer: 
+Use Permissions – There is no such term available in AWS CLI
+Use Authentication – There is no such term available in AWS CLI
+Use Policy – There is no such term available in AWS CLI
+
+Module 8: AWS ELB
+
+16.	Is this statement true:
+Application Load Balancer works on layer 7 of OSI model i.e. on the application layer where as the Classic Load Balancer works on layer 4 of OSI model i.e. on the transport layer. 
+
+The correct answer is True.
+
+Explanation for correct answer: 
+Application Load Balancer works on layer 7 of OSI model that is on application layer where as the Classic Load Balancer works on layer 4 of OSI model that is on Transport layer 
+
+Explanation for Wrong answer: 
+Application Load Balancer works on layer 7 of OSI model that is on application layer where as the Classic Load Balancer works on layer 4 of OSI model that is on Transport layer 
+
+17.	There are two types of ELB. They are --
+a)	Classic Load Balancer and Application Load Balancer
+b)	Old Load Balancer and New Load Balancer
+c)	Default Load Balancer and Non-Default Load Balancer 
+d)	Internal Load Balancer and External Load Balancer
+
+
+The correct answer is option a) Classic Load Balancer and Application Load Balancer. 
+
+Explanation for correct answer: 
+There are two types of ELB. They are – 
+•	Classic Load Balancer: Routes traffic based on application or network level information and is ideal for simple load balancing of traffic across multiple EC2 instances where high availability, automatic scaling, and robust security are required.
+•	Application Load Balancer: Service that operates at the application layer and allows to define routing rules based on content across multiple services or containers running on one or more Amazon Elastic Compute Cloud (Amazon EC2) instances.
+
+Explanation for Wrong answer: 
+Class Load Balancer and Application Load Balancer – There is no ELB with the name Class Load Balancer 
+Classic Load Balancer and Applicant Load Balancer – There is no ELB with the name Applicant Load Balancer 
+Class Load Balancer and Applicant Load Balancer - There is no ELB with the name Class Load Balancer and Applicant Load Balancer 
+
+18.	Which feature provided by AWS and ensures your cloud infrastructure has optimal capacity to serve your application users?
+
+a)	Auto Selecting
+b)	Auto Connecting
+c)	Auto Scaling
+d)	Auto Switching
+
+The correct answer is option c) Auto Scaling
+
+Explanation for correct answer: 
+That is correct. When you use Auto Scaling, you can automatically increase the size of your Auto Scaling group when demand goes up and decrease it when demand goes down. 
+
+Explanation for Wrong answer:
+ 
+Auto Selecting – There is no such term available in AWS CLI
+Auto Connecting – There is no such term available in AWS CLI
+Auto Switching – There is no such term available in AWS CLI
+
+
+Module 9: SQS:
+
+19.	Is this statement true:
+AWS SQS helps decouple the components of an application so that they can run independently.It provides robust message management between components. Any component of a distributed application can store messages in a fail-safe queue.
+ 
+
+The correct answer is True
+
+Explanation for correct answer: 
+SQS helps decouple the components of an application so they run independently, it does message management between components. Any component of a distributed application can store messages in a fail-safe queue.
+
+Explanation for Wrong answer: 
+SQS helps decouple the components of an application so they run independently, it does message management between components. Any component of a distributed application can store messages in a fail-safe queue.
+
+20.	What is the name of an AWS service which is a simple, fully-managed "push" messaging service that allows users to push texts, alerts or notifications?
+ 
+a)	AWS Simple Notification Service
+b)	AWS Simple Queue Service
+c)	AWS Similar Notification Service
+d)	AWS Similar Queue Service
+
+The correct answer is option a) AWS Simple Notification Service. 
+
+Explanation for correct answer: 
+
+Amazon Simple Notification Service (SNS) is a simple, fully-managed "push" messaging service that allows users to push texts, alerts or notifications, like an auto-reply message, or a notification that a package has shipped.
+Applications can use AWS SNS to easily push real time notifications to the interested supply route or multiple delivery protocols. These delivery protocols can be email, SMS, SQS-Queues etc..
+
+Explanation for Wrong answer: 
+No that is quite right. AWS Simple Queue Service - AWS Simple Queue Service is a distributed queue system that enables web service applications to quickly and very efficiently queue messages that one component application generates and is to be consumed by another application
+
+AWS Similar Notification Service - There is no service with this name 
+AWS Similar Queue Service - There is no service with this name 
+
+21.	Which of the following is not a component of SNS?
+a)	Subject
+b)	Owner
+c)	Subscriber
+d)	Publisher
+
+The correct answer is option a) Subject
+
+Explanation for correct answer: 
+The four components of SNS are Topic, Owners, Subscribers and Publishers.
+
+Explanation for Wrong answer: 
+Owners: This is a part of SNS components. The four components of SNS are Topic, Owners, Subscribers and Publishers
+Subscribers: This is a part of SNS components. The four components of SNS are Topic, Owners, Subscribers and Publishers
+Publishers: This is a part of SNS components. The four components of SNS are Topic, Owners, Subscribers and Publishers
+
+
+Module 10: ECS
+
+22.	Is this statement true?
+AWS ECS or EC2 Container service is a low performance, unscalable service provided by AWS.
+
+The correct answer is False
+
+Explanation for correct answer: 
+AWS ECS or EC2 Container service is a high performance and highly scalable service provided by AWS 
+
+Explanation for Wrong answer: 
+It cannot be true because AWS ECS or EC2 Container service is a high performance and highly scalable service provided by AWS 
+
+23.	___________ define containers that we want to run together. They can be used to model the containers that create the application. 
+a)	Task definitions
+b)	Task determination
+c)	Task description
+d)	Task details
+
+The correct answer is option a) Task definitions. 
+
+Explanation for correct answer: 
+Task definitions define containers that we want to run together. They can be used to model the containers that create the application. Task definitions also allow us to specify CPU and memory as well as docker concepts (links, volumes). Like source codes, track definitions are tracked by name and revision. 
+
+Explanation for Wrong answer: 
+Task determination -There is no such term available in AWS CLI
+Task description - There is no such term available in AWS CLI
+Task details -There is no such term available in AWS CLI
+
+24.	ECS stands for:
+a)	Elastic Container Service
+b)	Elastic Container Selecting
+c)	Elastic Container Scaling
+d)	Elastic Container Switching
+
+The correct answer is option a) Elastic Container Service
+
+Explanation for correct answer: 
+ECS stands for Elastic Container Services, it is designed to launch, create and stop container-enabled applications.
+It can be used to query state of the cluster. The access features available are ELB, EBS volumes, security groups and IAM roles. 
+It reduces and manages the task of configuring the container environment. 
+
+Explanation for Wrong answer: 
+Elastic Container Selecting – There is no such term available in AWS CLI
+Elastic Container Scaling – There is no such term available in AWS CLI
+Elastic Container Switching – There is no such term available in AWS CLI
+ 
+
+ Module 11 : AWS SES
+ 
+28.	Is this statement true?
+AWS Simple Email Service is an email service that has upfront fees or fixed expenses. 
+ 
+The correct answer is false 
+
+Explanation for correct answer: 
+AWS Simple Email Service is an email service that has no upfront fees or fixed expenses. 
+ 
+Explanation for Wrong answer: 
+AWS Simple Email Service is an email service that has no upfront fees or fixed expenses. 
+
+29.	Which of the following is a feature of AWS Simple Email Service?
+a)	Cost based on number of emails sent
+b)	Mails can only be sent to and from verified and unverified email addresses 
+c)	Maximum rate of sending out email is 1 email/second or
+d)	Maximum number of emails that can be sent from an SES account
+
+The correct answer is option a - Cost based on number of emails sent
+
+Explanation for correct answer: 
+Cost based on number of emails sent is one of the feature of AWS Simple Email Service
+
+Explanation for Wrong answer: 
+Mails can only be sent to and from verified email addresses – This is one of the limitation of AWS Simple Email Service
+Maximum rate of sending out email is 1 email/second – This is one of the limitation of AWS Simple Email Service
+Maximum number of emails that can be sent from an SES account – This is one of the limitation of AWS Simple Email Service
+
+30.	Is this statement true?
+AWS SES has an easy programmatic API and can be integrated with Amazon S3, AWS key, Management system, AWS SNS, Amazon work mail and AWS Lambda. 
+
+The correct answer is true
+
+Explanation for correct answer: 
+AWS SES like other AWS services have easy programmatic API and is well integrated with other AWS services. 
+
+Explanation for Wrong answer: 
+Receiving mails with SNS has an easy programmatic access, can be integrated with Amazon S3, AWS key, Management system, AWS SNS, Amazon work mail and AWS Lambda. 
+
+
+Module 12: Bash
+
+25.	Is this statement true:
+
+We can combine shell scripting and AWS CLI to script long and complex tasks into simple parameterized steps.
+
+The correct answer is true 
+
+Explanation for correct answer: 
+This statement is true. With the help of shell scripting tool in AWS CLI, we can combining a sequence of commands together and can make long tasks very short in less time. The shell scripting tool is a very useful tool in AWS CLI to perform the mentioned tasks. 
+
+Explanation for Wrong answer: 
+This statement is true. With the help of shell scripting tool in AWS CLI, we can combining a sequence of commands together and can make long tasks very short in less time. The shell scripting tool is a very useful tool in AWS CLI to perform the mentioned tasks. 
+
+26.	John uses AWS to run his website. One month he got an unusually inflated cloud usage AWS bill. He could figure out exactly what AWS resources were being over consumed in his AWS account. What can he do to quickly list his AWS resources across all AWS regions?
+
+a)	Look for the AWS instances using the AWS web management console
+b)	Call AWS support hotline
+c)	Use scripting and AWS CLI to list the AWS resources across AWS regions
+d)	None of the above
+ 
+
+
+The correct answer is option c) 
+
+a) This will work - but will take quite a bit of time
+b) This may work - but it is not very efficient
+c) Using shell scripting and AWS CLI is the most efficient way to list all the AWS resources within the AWS account
+d) No that is not quite right
+
+
+
+27.	Is this statement False:
+Single click command, means in a single click a command will operate only one task or operation.
+
+The correct answer is False
+
+Explanation for correct answer: 
+Single click command, means in a single click, a command will operate multiple tasks.
+
+Explanation for wrong answer: 
+Single click command, means in a single click, a command will operate multiple tasks. So the statement mentioned here is false.
+
